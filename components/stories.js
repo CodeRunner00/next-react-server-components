@@ -16,7 +16,7 @@ async function StoryWithData({ id }) {
 export default async function Stories({ storyIds, page = 1 }) {
   const limit = 30
   const offset = (page - 1) * limit
-
+  // TODO: Create a client component with a button and a count representing how many stories you liked on the current page
   return (
     <div>
       {storyIds.slice(offset, offset + limit).map((id, i) => (
